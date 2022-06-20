@@ -1,0 +1,47 @@
+{
+  "name": "api-authentication--system",
+  "version": "1.0.0",
+  "description": "Small project for Authentication and authorization.",
+  "main": "index.js",
+  "scripts": {
+    "init:config": "sequelize init:config",
+    "db:create": "sequelize db:create",
+    "lint": "eslint **/*.js",
+    "watch": "nodemon index.js",
+    "test-watch": "jest --watchAll --coverage",
+    "init": "sequelize db:create",
+    "test": "NODE_ENV=test jest",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "start": "NODE_ENV=production node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarSawalmeh/API-Authentication--System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmarSawalmeh/API-Authentication--System/issues"
+  },
+  "homepage": "https://github.com/OmarSawalmeh/API-Authentication--System#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.14.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
+  }
+}
